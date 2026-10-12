@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi página personal</title>
+
+    <link rel="stylesheet" href="public/css/estilos_min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><span class="spanClase" onclick="verDiv('sobre-mi')">Sobre mí</span></li>
+            <li><span class="spanClase"  onclick="verDiv('proyectos')">Portfolio</span></li>
+            <li><span class="spanClase" onclick="verDiv('contacto')">Contacto</span></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+
+        <div class="contenido">
+            <p class="saludo">Hola, soy</p>
+
+            <h1>Álvaro Sanz Llorente</h1>
+
+            <h2>Desarrollador Web</h2>
+        </div>
+    </main>
+
+
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="sobre-contenido">
+            <div class="sobre-imagen">
+                <img src="public/img/alvaro.jpg" class="foto" alt="">
+            </div>
+            <div class="sobre-texto">
+                <p class="subtitulo">SOBRE MÍ</p>
+                <h2>Conoce un poco sobre mí</h2>
+                <p> Soy desarrollador web apasionado por la programación y por la creación de aplicaciones modernas,
+                    funcionales y fáciles de utilizar. </p><br>
+                <p> Me gusta aprender nuevas tecnologías y mejorar continuamente mis conocimientos para afrontar nuevos
+                    proyectos y retos. </p>
+
+            </div>
+    </section><br><br><br><br>
+
+
+    <section class="proyectos" id="proyectos">
+        <div class="sobre-contenido">
+            <div class="sobre-imagen">
+                <img src="public/img/componentes.png" class="foto2">
+            </div>
+            <div class="sobre-texto">
+                <p class="subtitulo">PORFOLIO</p><br>
+                <h2>Componentes</h2>
+                <p>Aplicación web desarrollada con HTML, CSS, JavaScript y PHP. </p><br>
+                <a target="_blank" class="colorA" href="https://porfolioalvarosanz.totalh.net/"> Ver aplicación → </a>
+            </div>
+            
+    </section><br><br><br><br>
+
+
+  
+<section class="contacto" id="contacto">
+
+    <div class="contacto-contenido">
+
+        <div class="contacto-info">
+
+            <p class="subtitulo">CONTACTO</p>
+            <p>
+                ¿Tienes un proyecto en mente o quieres contactar conmigo?
+                Rellena el formulario y te responderé lo antes posible.
+            </p>
+        </div>
+
+        <form class="formulario" name="contacto" method="POST">
+
+            <div class="campo">
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    minlength="3"
+                    maxlength="30"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    minlength="12"
+                    maxlength="50"
+                >
+
+            </div>
+
+            <div class="campo">
+
+                <label for="mensaje">
+                    Mensaje
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="6"
+                    placeholder="Escribe tu mensaje..."
+                    minlength="3"
+                    maxlength="500"
+                ></textarea>
+
+            </div>
+
+
+            <button type="button" class="boton" onclick="validar()">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p> © 2026 Mi página web. Todos los derechos reservados. </p> <br><br>
+        </div>
+    </footer>
+    <script src="public/js/main_min.js"></script>
+    <script src="public/js/form-validator_min.js"></script>
+    <script src="public/js/pagina_min.js"></script>
+</body>
+
+</html>
